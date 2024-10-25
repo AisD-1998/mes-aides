@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <style>
+        /* Styles généraux pour la page */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Barre de navigation principale */
+        .twbb-nav-menu__container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff;
+            padding: 15px 50px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .twbb-nav-menu {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .twbb-nav-menu li {
+            margin-right: 20px;
+        }
+
+        .twbb-nav-menu a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #333;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .twbb-nav-menu a:hover {
+            color: #0073e6;
+        }
+
+        .twbb-nav-menu--dropdown {
+            display: none;
+        }
+
+        /* Formulaire d'inscription */
+        #mc_embed_signup {
+            background: #ffffff;
+            margin: 50px auto;
+            padding: 20px;
+            width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #mc_embed_signup h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .mc-field-group {
+            margin-bottom: 15px;
+        }
+
+        .mc-field-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .mc-field-group input,
+        .mc-field-group select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .mc-field-group input:focus,
+        .mc-field-group select:focus {
+            border-color: #0073e6;
+            outline: none;
+        }
+
+        #mc-embedded-subscribe {
+            background-color: #0073e6;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #mc-embedded-subscribe:hover {
+            background-color: #005bb5;
+        }
+
+        .indicates-required {
+            font-size: 12px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .twbb-nav-menu__container {
+                padding: 15px;
+            }
+
+            .twbb-nav-menu {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .twbb-nav-menu li {
+                margin-bottom: 10px;
+            }
+
+            #mc_embed_signup {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barre de navigation -->
+    <nav class="twbb-nav-menu--main twbb-nav-menu__container twbb-nav-menu--layout-horizontal">
+        <ul id="menu-1-cd43yl1h" class="twbb-nav-menu twbb-menu_term_id-3">
+           
+            <li class="ai-recreated-menu-item twbb_menu_order_2">
+                <a href="INDEX.html" class="twbb-item">Accueil</a>
+            </li>
+            <li class="ai-recreated-menu-item twbb_menu_order_3">
+                <a href="contact.html" class="twbb-item">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Formulaire d'inscription -->
+    <div id="mc_embed_signup">
+        <form action="https://gmail.us14.list-manage.com/subscribe/post?u=e53388a1c9b025298d7445f54&amp;id=c3920dbd48&amp;f_id=00543fe1f0" method="post" target="_blank">
+            <h2>Inscrivez-vous à notre newsletter</h2>
+            <div class="indicates-required"><span class="asterisk">*</span> Champs obligatoires</div>
+
+            <div class="mc-field-group">
+                <label for="mce-EMAIL">Adresse e-mail <span class="asterisk">*</span></label>
+                <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required>
+            </div>
+
+            <div class="mc-field-group">
+                <label for="mce-FNAME">Prénom</label>
+                <input type="text" name="FNAME" id="mce-FNAME">
+            </div>
+
+            <div class="mc-field-group">
+                <label for="mce-LNAME">Nom</label>
+                <input type="text" name="LNAME" id="mce-LNAME">
+            </div>
+
+            <div class="mc-field-group">
+                <label for="mce-ADDRESS">Adresse</label>
+                <input type="text" name="ADDRESS" id="mce-ADDRESS">
+            </div>
+
+            <div class="mc-field-group">
+                <label for="mce-PHONE">Numéro de téléphone</label>
+                <input type="text" name="PHONE" id="mce-PHONE">
+            </div>
+
+            <input type="submit" value="S'inscrire" id="mc-embedded-subscribe">
+        </form>
+    </div>
+</body>
+
+</html>
